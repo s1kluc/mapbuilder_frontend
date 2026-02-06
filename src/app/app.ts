@@ -1,10 +1,9 @@
-import { Component, signal } from '@angular/core';
-import {UploadComponent} from './upload-component/upload-component';
-import {SidebarComponent} from './sidebar-component/sidebar-component';
+import {Component, signal} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  imports: [UploadComponent, SidebarComponent],
+  imports: [
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
