@@ -1,0 +1,31 @@
+<div class="room-editor-container">
+  <div class="canvas-container" (mousemove)="onMouseMove($event)" (mouseup)="deselectWorkspace()">
+    <div class="canvas">
+      @for (workspace of workspaces; track workspace) {
+        <div class="workspace-object"
+             [class.active]="workspace === activeWorkspace"
+             [style.left]="workspace.x_position + 'px'"
+             [style.top]="workspace.y_position + 'px'"
+             [style.transform]="'rotate(' + workspace.rotation + 'deg)'"
+             (mousedown)="selectWorkspace(workspace, $event)"
+        ></div>
+
+      }
+    </div>
+    <div class="fab-container">
+      <button class="fab-main fab-shadow" (click)="toggle()">
+        @if (open) {
+          <i class="fa-solid fa-x"></i>
+        } @else {
+          <i class="fa-solid fa-plus"></i>
+        }
+      </button>
+      @if (open) {
+        <div class="fab-actions">
+          <button class="fab-secondary fab-shadow" (click)="openCreateWorkspaceDialog()">Arbeitsplatz</button>
+          <button class="fab-secondary fab-shadow">Objekt</button>
+        </div>
+      }
+    </div>
+  </div>
+</div>

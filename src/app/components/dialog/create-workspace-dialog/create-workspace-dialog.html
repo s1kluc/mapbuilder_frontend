@@ -1,0 +1,18 @@
+<div class="dialog-container">
+  <p style=" font-family:sans-serif; font-size: 20px">Arbeitsplatz erstellen</p>
+    <div class="dialog-input-fields">
+      <p>Bezeichnung:</p>
+      <input type="text" name="name" style="width: 80%" [(ngModel)]="name">
+      <p>Beschreibung:</p>
+      <input type="text" name="description" style="width: 80%" [(ngModel)]="description">
+      <br>
+      <div style="display: flex; flex-direction: row; align-content: center; justify-content: center; gap: 14px">
+        <input type="checkbox" [(ngModel)]="heightAdjustable"> Höhenverstellbar
+      </div>
+    </div>
+
+  <div class="dialog-button-footer">
+    <button class="dialog-button button-save" (click)="onSubmit()">Speichern</button>
+    <button class="dialog-button button-abort" (click)="onAbort()">Abbrechen</button>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  flex: 1;
+}
+
+
+.base-layout-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.base-layout-content {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}

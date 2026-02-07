@@ -1,0 +1,26 @@
+.sidebar-container {
+  background-color: #424656;
+  width: 300px;
+  height: 100%;
+}
+
+.sidebar-option-button {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: white;
+  background: transparent;
+}
+
+.sidebar-option-button:hover {
+  background-color: rgba(176, 196, 222, 0.29);
+}
+.sidebar-option-button:focus {
+
+  background-color: rgba(176, 196, 222, 0.45);
+}
